@@ -1,0 +1,76 @@
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main-wrap{
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+body{
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  color: $col-main;
+  font-size: 18px;
+}
+
+h1{
+  font-size: 32px;
+
+  @include media-max($M){
+    font-size: 28px;
+  }
+  @include media-max($S){
+    font-size: 22px;
+  }
+}
+
+a, button{
+  cursor: pointer;
+  transition: all 0.3s;
+}
+a{
+  text-decoration: none;
+  color: $col-main;
+
+  &:hover{
+    color:$col-active;
+  }
+}
+button{
+  border: none;
+  outline: none;
+}
+
+.btn{
+  background-color:$col-btn;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  &:hover{
+    background-color: $col-active;
+  }
+
+  @include media-max($XS){
+    width: 100%;
+  }
+}
+
+input{
+  border: 2px solid $col-border;
+  border-radius: 4px;
+  padding: 8px 20px;
+}
+
+form{
+  width: 100%;
+}
+
+select{cursor: pointer;}
+
+.shadow{
+  box-shadow:0 8px 20px -7px rgb(66, 66, 66);
+}

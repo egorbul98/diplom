@@ -1,0 +1,36 @@
+$XL: 1980;
+$L: 1440;
+$M: 1024;
+$S: 768;
+$XS: 576;
+
+
+// $col-btn: #2dabfb;
+// $col-btn-light: #74c0f0;
+$col-btn: #767fcf;
+
+$col-border: #dcdacb;
+
+$col-main: #583671;
+
+// $col-thin: #F4EFFA;
+// $col-font: #583671;
+
+$col-active: #CFB986;
+
+
+$font: "Ubuntu";
+$font-h: "Cambria";
+
+
+@mixin media-min($name) {
+  @media (min-width: #{$name}px) {
+    @content;
+  }
+}
+
+@mixin media-max($name) {
+  @media (max-width: #{$name}px) {
+    @content;
+  }
+}

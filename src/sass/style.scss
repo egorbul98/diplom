@@ -1,12 +1,9 @@
+@import "reset";
+@import "settings";
+@import "mixins";
 
-body{
-  background-color: red;
-  
-}
-html{
-  font-size: 20px;
-}
+@import "base";
 
-
-
-@import "section";
+@import "parts/header";
+@import "parts/title-outer";
+@import "parts/footer";
