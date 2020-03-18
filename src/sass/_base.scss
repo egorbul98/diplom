@@ -25,7 +25,7 @@ body{
 
 h1{
   font-size: 32px;
-
+  font-weight: bold;
   @include media-max($M){
     font-size: 28px;
   }
@@ -48,11 +48,40 @@ h2{
 h3{
   font-size: 20px;
   font-weight: bold;
+
+  @include media-max($M){
+    font-size: 18px;
+  }
+
   @include media-max($S) {
     font-size: 16px;
   }
 }
+h4{
+  font-size: 16px;
+  font-weight: bold;
+  @include media-max($S) {
+    font-size: 14px;
+  }
+}
+h5{
+  font-size: 14px;
+  font-weight: bold;
+  @include media-max($S) {
+    font-size: 12px;
+  }
+}
 
+p{
+  font-size: 18px;
+
+  @include media-max($M) {
+    font-size: 16px;
+  }
+  @include media-max($S) {
+    font-size: 14px;
+  }
+}
 a, button{
   cursor: pointer;
   transition: all 0.3s;
@@ -88,6 +117,11 @@ button{
   @include media-max($S){
     // width: 100%;
     padding: 6px 14px;
+    font-size: 16px;
+  }
+  @include media-max($M){
+    // width: 100%;
+    padding: 6px 14px;
     font-size: 12px;
   }
 }
@@ -101,6 +135,9 @@ button{
   @include media-max($S){
     font-size: 14px;
   }
+}
+.btn-close{
+  cursor: pointer;
 }
 
 input{
@@ -145,4 +182,44 @@ select{cursor: pointer; color: $col-main;}
       content: ":";
     }
   }
+}
+
+.notifications{
+  display: none;
+  width: 100%;
+  color: #ffffff;
+  font-size: 18px;
+
+  @include media-max($M){
+    font-size: 16px;
+  }
+  @include media-max($S){
+    font-size: 14px;
+  }
+
+  &--active{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    display: block;
+  }
+  
+  &__item{
+    padding: 14px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $col-btn;
+    &--error{
+      background-color: $col-error;
+    }
+    &--success{
+      background-color: $col-active;
+    }
+    .text{
+      margin-right: 14px;
+    }
+  }
+  
 }

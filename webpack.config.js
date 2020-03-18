@@ -97,6 +97,10 @@ module.exports = {
       template: 'src/lesson-page.html',
       filename: 'lesson-page.html',
     }),
+    new HtmlWebpackPlugin({
+      template: 'src/lesson-module.html',
+      filename: 'lesson-module.html',
+    }),
     new MiniCssExtractPlugin({
       filename: 'main.css',
     }),

@@ -24,6 +24,12 @@ $(document).ready(function () {
       .children(".item-sections-item__cometencies")
       .slideToggle();
   });
+
+//NOTIFICATION
+  // $('.section').on("click", function () {
+  //   // $('.notifications').toggleClass("notifications--active");
+  //   $('.notifications').slideToggle();
+  // });
 });
 
 

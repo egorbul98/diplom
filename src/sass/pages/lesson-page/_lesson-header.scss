@@ -1,16 +1,32 @@
 .lesson-header{
+  border-bottom: 1px solid $col-border-op;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   background-color: $col-lesson-main;
   color: #ffffff;
-  border: 1px solid #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
   &__user{
     display: flex;
     align-items: center;
+    @include media-max($M){
+      font-size: 16px;
+     }
+     @include media-max($S){
+      font-size: 14px;
+     }
   }
   &__name{
     margin-right: 10px;
+
+    
+  }
+  &__logo a{
+    color: #ffffff;
   }
 }

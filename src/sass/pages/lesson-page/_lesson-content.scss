@@ -1,0 +1,95 @@
+.lesson-content{
+  height: 100%;
+  color: $col-main;
+  width: 100%;
+  padding-left: 282px;
+  padding-right: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @include scroolbar;
+  overflow-y: auto;
+
+  &__header{
+    .title{
+      text-align: center;
+      border-bottom: 1px solid $col-border;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+  
+    .desc{
+      text-align: justify;
+      text-align-last: center;
+    }
+  }
+  
+  .info-wrap{
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-between;
+    
+    @include media-max($M){
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    &__left, &__middle{
+      border: 1px solid $col-border;
+      padding: 16px;
+      padding-right: 0;
+      padding-bottom: 0;
+      margin-right: 16px;
+      flex-basis: 39%;
+
+      @include media-max($M){
+        flex-basis: 48%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+      @include media-max($S){
+        flex-basis: 100%;
+      }
+    }
+    &__right{
+      text-align: center;
+      .btn{
+        display: block;
+        text-align: center;
+
+        @include media-max($M){
+          max-width: 300px;
+          margin: auto;
+        }
+      }
+
+      @include media-max($M){
+        width: 100%;
+      }
+    }
+    .title{
+      padding-right: 10px;
+    }
+    .competences-list{
+      margin-top: 10px;
+      @include scroolbar;
+      height: 250px;
+      overflow-y: auto;
+      padding-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    .competence{
+      margin-bottom: 10px;
+      border-bottom: 1px solid $col-border;
+      font-size: 16px;
+      &:last-child{
+        border: none;
+        margin-bottom: 0;
+      }
+      @include media-max($M){
+        font-size: 14px;
+      }
+    }
+  }
+}
