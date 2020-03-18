@@ -14,6 +14,24 @@ $(document).ready(function () {
   $(".btn-gamburger").on("click", function () {
     $(".header-wrap").toggleClass("active");
   });
+
+  //LESSON_PAGE
+  $(".lesson-page .btn-gamburger").on("click", function () {
+    $(".lesson-sidebar").toggleClass("lesson-sidebar--active");
+  });
+  $(".lesson-page .lesson-header__name").on("click", function () {
+    $(this).siblings(".drop-down")
+      .slideToggle();
+  });
+
+  $('.lesson-page .section').on("click", function () {
+    // $('.notifications').toggleClass("notifications--active");
+    $(".lesson-sidebar").removeClass("lesson-sidebar--active");
+  });
+
+  
+//------------
+  
   $(".btn-close").on("click", function () {
     $(".header-wrap").removeClass("active");
   });
@@ -25,42 +43,12 @@ $(document).ready(function () {
       .slideToggle();
   });
 
-//NOTIFICATION
+  //NOTIFICATION
   // $('.section').on("click", function () {
   //   // $('.notifications').toggleClass("notifications--active");
   //   $('.notifications').slideToggle();
   // });
 });
-
-
-
-// $(document).ready(function () {
-
-// });
-// //JSON
-// import posts from "./js/json/posts.json"
-
-
-// const post = new Post("Пост 1");
-// const str = post.toString();
-
-
-// $(document).ready(function () {
-//   let $parent = $('.list');
-//   $parent.empty();
-//   let str = '';
-//   for (const key in posts) {
-//     str += `
-//     <h3 class="title">${posts[key].title}</h3>
-//       <div class="content">${posts[key].price}</div>
-//       <div class="footer">футер</div>
-//     `
-//   }
-
-//   $parent.append(str);
-// });
-
-
 
 
 import "./sass/style.scss"

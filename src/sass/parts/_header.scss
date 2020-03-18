@@ -193,14 +193,7 @@
   display: none;
   color: $col-main;
 
-  .btn-gamburger {
-    background-color: #fff;
-    font-size: 20px;
-
-    &:hover {
-      color: $col-active;
-    }
-  }
+  
 
   @include media-max($S) {
     display: flex;

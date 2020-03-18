@@ -12,6 +12,17 @@
   padding-right: 14px;
   padding-bottom: 20px;
   color: #ffffff;
+  z-index: 1;
+  
+  @include media-max($S){
+    // display: none;
+    transition: all 0.3s;
+    width: 100%;
+    left: -100%;
+    &--active{
+      left: 0;
+    }
+  }
 
   &__header {
     .lesson-progress {

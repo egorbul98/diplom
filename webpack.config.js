@@ -98,8 +98,12 @@ module.exports = {
       filename: 'lesson-page.html',
     }),
     new HtmlWebpackPlugin({
-      template: 'src/lesson-module.html',
-      filename: 'lesson-module.html',
+      template: 'src/lesson-page-section.html',
+      filename: 'lesson-page-section.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/lesson-page-module.html',
+      filename: 'lesson-page-module.html',
     }),
     new MiniCssExtractPlugin({
       filename: 'main.css',

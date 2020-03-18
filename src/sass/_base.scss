@@ -139,7 +139,14 @@ button{
 .btn-close{
   cursor: pointer;
 }
+.btn-gamburger {
+  background-color: transparent;
+  font-size: 20px;
 
+  &:hover {
+    color: $col-active;
+  }
+}
 input{
   border: 2px solid $col-border;
   border-radius: 4px;
