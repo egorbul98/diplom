@@ -30,16 +30,18 @@
     }
   }
 
- 
 
-  &__module-wrap, &__learned-modules {
+  
+  &__module-wrap,
+  &__learned-modules {
     margin-top: 20px;
   }
 
- 
+
   .title {
     text-align: center;
   }
+
   .module-list-steps {
     display: flex;
 
@@ -73,6 +75,14 @@
       margin-bottom: 10px;
     }
 
+    &__link {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
     .btn {
       position: absolute;
       bottom: 16px;
@@ -101,18 +111,23 @@
       }
     }
   }
-  &__learned-modules{
+
+  &__learned-modules {
     margin-bottom: 88px;
-    .module-inner{
+
+    .module-inner {
       flex-wrap: wrap;
     }
-    .slide{
+
+    .slide {
       padding: 0 10px
     }
-    .slick-slider .slick-list{
+
+    .slick-slider .slick-list {
       padding-bottom: 20px;
     }
-    .slick-arrow{
+
+    .slick-arrow {
       position: absolute;
       bottom: -50px;
       left: 50%;
@@ -121,30 +136,34 @@
       padding: 4px 10px;
       background-color: $col-border;
 
-      @include media-max($S){
+      @include media-max($S) {
         font-size: 16px;
         padding: 2px 5px;
         bottom: -30px;
       }
-      
-      &:hover{
+
+      &:hover {
         background-color: $col-active;
       }
     }
 
     .slick-next {
       margin-left: 40px;
-      @include media-max($S){
+
+      @include media-max($S) {
         margin-left: 25px;
       }
     }
+
     .slick-prev {
       margin-right: 40px;
-      @include media-max($S){
+
+      @include media-max($S) {
         margin-right: 25px;
       }
     }
   }
+
   .info-wrap {
     margin-top: 36px;
     display: flex;
@@ -221,5 +240,10 @@
         font-size: 14px;
       }
     }
+  }
+
+  .step{
+    text-align: right;
+    margin-bottom: 6px;
   }
 }

@@ -24,9 +24,13 @@
 @import "./pages/item-page/item-content";
 @import "./pages/item-page/sidebar";
 
-// LESSON ITEM
+// PAGE LESSON 
 @import "./pages/lesson-page/base";
 
 @import "./pages/lesson-page/lesson-header";
 @import "./pages/lesson-page/lesson-sidebar";
 @import "./pages/lesson-page/lesson-content";
+
+@import "./pages/lesson-page/module/base";
+@import "./pages/lesson-page/module/module-answer";
+@import "./pages/lesson-page/module/module-test";
