@@ -94,8 +94,16 @@ module.exports = {
       filename: 'item-page.html',
     }),
     new HtmlWebpackPlugin({
+      template: 'src/list-items-page.html',
+      filename: 'list-items-page.html',
+    }),
+    new HtmlWebpackPlugin({
       template: 'src/lesson-page.html',
       filename: 'lesson-page.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/lesson-page-main.html',
+      filename: 'lesson-page-main.html',
     }),
     new HtmlWebpackPlugin({
       template: 'src/lesson-page-section.html',

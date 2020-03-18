@@ -14,6 +14,9 @@ $(document).ready(function () {
   $(".btn-gamburger").on("click", function () {
     $(".header-wrap").toggleClass("active");
   });
+  $(".filter-btn").on("click", function () {
+    $(".filter .drop-down").slideToggle();
+  });
 
   //LESSON_PAGE
   $(".lesson-page .btn-gamburger").on("click", function () {

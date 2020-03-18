@@ -31,13 +31,58 @@
   }
 
 
+  &__tests{
+    margin-top: 20px;
+    margin-right: 20px;
+
+    @include media-max($M){
+      margin: 14px auto 0;
+    }
+    .test{
+      cursor: pointer;
+      max-width: 900px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 16px 20px;
+      border: 1px solid #dcdacb;
+      border-radius: 10px;
+      margin-top: 20px;
+      position: relative;
+      transition: background-color 0.3s;
+      &:hover{
+        background-color: #dcdacb88;
+      }
+
+      &__module{
+        border-bottom: 1px solid $col-border-op;
+        padding: 6px 0;
+      }
+      &__link{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      .section{
+        font-size: 14px;
+      }
+    }
+  }
+
+  
   
   &__module-wrap,
   &__learned-modules {
     margin-top: 20px;
   }
 
-
+  &__module-wrap{
+    @include media-max($M){
+      margin: 14px auto 0;
+    }
+  }
   .title {
     text-align: center;
   }
@@ -66,14 +111,11 @@
     position: relative;
     transition: background-color 0.3s;
 
+    
     &:hover {
       background-color: $col-border-op;
     }
 
-    &__title {
-      margin-right: 10px;
-      margin-bottom: 10px;
-    }
 
     &__link {
       position: absolute;
@@ -96,6 +138,14 @@
 
       @include media-max($XS) {
         display: block;
+      }
+
+      .left{
+        margin-right: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
     }
 
@@ -167,11 +217,11 @@
   .info-wrap {
     margin-top: 36px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     @include media-max($M) {
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-between;
       margin-top: 20px;
     }
 
@@ -224,6 +274,11 @@
       overflow-y: auto;
       padding-right: 10px;
       margin-bottom: 10px;
+
+     
+      @include media-max($S) {
+        height: 110px;
+      }
     }
 
     .competence {
@@ -245,5 +300,18 @@
   .step{
     text-align: right;
     margin-bottom: 6px;
+  }
+  .necessary{
+    @include media-max($M){
+      margin-bottom: 10px;
+    }
+  }
+}
+.lesson-content-wrapper{
+  display: flex;
+  justify-content: space-between;
+
+  @include media-max($M){
+    flex-wrap: wrap;
   }
 }

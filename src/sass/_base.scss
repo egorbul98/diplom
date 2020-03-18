@@ -100,6 +100,7 @@ a{
   @include media-max($S){
     font-size: 16px;
   }
+
 }
 button{
   border: none;
@@ -112,21 +113,23 @@ button{
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 13px;
   &:hover{
     background-color: $col-active;
     color: #ffffff;
   }
 
-  @include media-max($S){
-    // width: 100%;
-    padding: 6px 14px;
-    font-size: 16px;
-  }
+  
   @include media-max($M){
     // width: 100%;
     padding: 6px 14px;
     font-size: 12px;
   }
+  // @include media-max($S){
+  //   // width: 100%;
+  //   padding: 6px 14px;
+  //   font-size: 16px;
+  // }
 }
 
 .btn-more{

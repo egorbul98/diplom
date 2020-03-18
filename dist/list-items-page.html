@@ -8,11 +8,11 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
 
 
-  <title>INDEX</title>
+  <title>Список</title>
 
 <link href="main.css" rel="stylesheet"></head>
 
-<body>
+<body class="list">
   <header class="header">
 
     <div class="main-wrap">
@@ -148,14 +148,96 @@
       </div>
     </div>
   </section>
-  <section class="title-outer">
-    <h1 class="title">Новые курсы</h1>
-    <div class="line"></div>
+
+
+
+  <section class="filter">
+    <div class="main-wrap">
+      <div class="filter-wrapper shadow-light">
+        <div class="filter__btns-wrap">
+          <button class="btn filter-btn"><span class="icon"><i class="fas fa-sliders-h"></i></span>Фильтр</button>
+          <div class="filter-inner">
+            <a href="#" class="btn center">По новизне</a>
+            <a href="#" class="btn center">По популярности</a>
+          </div>
+        </div>
+        <form action="" class="form">
+          <div class="drop-down">
+            <div class="drop-down__inner">
+              <div class="drop-down__item">
+                <h3 class="title">Категория</h3>
+                <div class="form-field">
+                  <input type="checkbox" name="category" id="category1">
+                  <label for="category1">Программирование</label>
+                </div>
+                <div class="form-field">
+                  <input type="checkbox" name="category" id="category2">
+                  <label for="category2">Дизайн</label>
+                </div>
+                <div class="form-field">
+                  <input type="checkbox" name="category" id="category3">
+                  <label for="category2">Категория</label>
+                </div>
+              </div>
+
+              <div class="drop-down__item">
+                <h3 class="title">Язык</h3>
+                <div class="form-field">
+                  <input type="checkbox" name="language" id="language1">
+                  <label for="language1">Русский</label>
+                </div>
+                <div class="form-field">
+                  <input type="checkbox" name="language" id="language2">
+                  <label for="language2">Английский</label>
+                </div>
+              </div>
+
+              <div class="drop-down__item">
+                <h3 class="title">Рейтинг</h3>
+
+                <div class="form-field">
+                  <input type="radio" name="rating" id="rating1">
+                  <label for="rating1">Рейтинг</label>
+                </div>
+              </div>
+
+            </div>
+            <button type="submit" class="btn">Применить фильтр</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </section>
+
 
   <section class="courses">
     <div class="main-wrap">
       <div class="courses-list">
+        
+        <div class="courses-item">
+          <div class="courses-item__img">
+            <img src="img/header-bg.jpg" alt="картинка курса">
+          </div>
+          <div class="courses-item__info">
+            <h3 class="courses-item__title">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quae tempora quidem debitis nam, aliquid
+              iste. Delectus aspernatur alias perspiciatis pariatur nulla esse placeat, qui adipisci aliquam rem sed
+              quia!
+            </h3>
+
+            <div class="courses-item__category">
+              Программирование
+            </div>
+
+            <div class="courses-item__author">
+              <span class="icon"><i class="fas fa-user"></i></span><span class="name">Иванов Иван</span>
+            </div>
+          </div>
+          <div class="courses-item__overlay">
+            <a href="#" class="ovelay-link"></a>
+            <h1>Открыть</h1>
+          </div>
+        </div>
 
         <div class="courses-item">
           <div class="courses-item__img">
@@ -180,40 +262,17 @@
             <a href="#" class="ovelay-link"></a>
             <h1>Открыть</h1>
           </div>
-
         </div>
 
         <div class="courses-item">
           <div class="courses-item__img">
-            <img src="img/course.jpg" alt="картинка курса">
+            <img src="img/header-bg.jpg" alt="картинка курса">
           </div>
           <div class="courses-item__info">
             <h3 class="courses-item__title">
-              Полное руководство по Python 3: от новичка до специалиста
-            </h3>
-
-            <div class="courses-item__category">
-              Программирование
-            </div>
-
-            <div class="courses-item__author">
-              <span class="icon"><i class="fas fa-user"></i></span><span class="name">Иванов Иван</span>
-            </div>
-          </div>
-          <div class="courses-item__overlay">
-            <a href="#" class="ovelay-link"></a>
-            <h1>Открыть</h1>
-          </div>
-        </div>
-
-
-        <div class="courses-item">
-          <div class="courses-item__img">
-            <img src="img/course.jpg" alt="картинка курса">
-          </div>
-          <div class="courses-item__info">
-            <h3 class="courses-item__title">
-              Полное руководство по Python 3: от новичка до специалиста
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quae tempora quidem debitis nam, aliquid
+              iste. Delectus aspernatur alias perspiciatis pariatur nulla esse placeat, qui adipisci aliquam rem sed
+              quia!
             </h3>
 
             <div class="courses-item__category">
@@ -232,11 +291,13 @@
 
         <div class="courses-item">
           <div class="courses-item__img">
-            <img src="img/course.jpg" alt="картинка курса">
+            <img src="img/header-bg.jpg" alt="картинка курса">
           </div>
           <div class="courses-item__info">
             <h3 class="courses-item__title">
-              Полное руководство по Python 3: от новичка до специалиста
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quae tempora quidem debitis nam, aliquid
+              iste. Delectus aspernatur alias perspiciatis pariatur nulla esse placeat, qui adipisci aliquam rem sed
+              quia!
             </h3>
 
             <div class="courses-item__category">
@@ -255,11 +316,13 @@
 
         <div class="courses-item">
           <div class="courses-item__img">
-            <img src="img/course.jpg" alt="картинка курса">
+            <img src="img/header-bg.jpg" alt="картинка курса">
           </div>
           <div class="courses-item__info">
             <h3 class="courses-item__title">
-              Полное руководство по Python 3: от новичка до специалиста
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quae tempora quidem debitis nam, aliquid
+              iste. Delectus aspernatur alias perspiciatis pariatur nulla esse placeat, qui adipisci aliquam rem sed
+              quia!
             </h3>
 
             <div class="courses-item__category">
@@ -276,236 +339,16 @@
           </div>
         </div>
 
-        <div class="courses-item">
-          <div class="courses-item__img">
-            <img src="img/course.jpg" alt="картинка курса">
-          </div>
-          <div class="courses-item__info">
-            <h3 class="courses-item__title">
-              Полное руководство по Python 3: от новичка до специалиста
-            </h3>
-
-            <div class="courses-item__category">
-              Программирование
-            </div>
-
-            <div class="courses-item__author">
-              <span class="icon"><i class="fas fa-user"></i></span><span class="name">Иванов Иван</span>
-            </div>
-          </div>
-          <div class="courses-item__overlay">
-            <a href="#" class="ovelay-link"></a>
-            <h1>Открыть</h1>
-          </div>
-        </div>
 
       </div>
-
-      <a href="#" class="btn btn-more">Показать еще</a>
     </div>
   </section>
 
-  <section class="title-outer">
-    <h1 class="title">Популярные курсы</h1>
-    <div class="line"></div>
-  </section>
-
-  <section class="courses">
-    <div class="main-wrap">
-      <div class="courses-list">
-
-        <div class="courses-item">
-          <div class="courses-item__img">
-            <img src="img/course.jpg" alt="картинка курса">
-          </div>
-          <div class="courses-item__info">
-            <h3 class="courses-item__title">
-              Полное руководство по Python 3: от новичка до специалиста
-            </h3>
-
-            <div class="courses-item__category">
-              Программирование
-            </div>
-
-            <div class="courses-item__author">
-              <span class="icon"><i class="fas fa-user"></i></span><span class="name">Иванов Иван</span>
-            </div>
-          </div>
-          <div class="courses-item__overlay">
-            <h1>Открыть</h1>
-          </div>
-        </div>
-
-        <div class="courses-item">
-          <div class="courses-item__img">
-            <img src="img/course.jpg" alt="картинка курса">
-          </div>
-          <div class="courses-item__info">
-            <h3 class="courses-item__title">
-              Полное руководство по Python 3: от новичка до специалиста
-            </h3>
-
-            <div class="courses-item__category">
-              Программирование
-            </div>
-
-            <div class="courses-item__author">
-              <span class="icon"><i class="fas fa-user"></i></span><span class="name">Иванов Иван</span>
-            </div>
-          </div>
-          <div class="courses-item__overlay">
-            <h1>Открыть</h1>
-          </div>
-        </div>
-
-
-        <div class="courses-item">
-          <div class="courses-item__img">
-            <img src="img/course.jpg" alt="картинка курса">
-          </div>
-          <div class="courses-item__info">
-            <h3 class="courses-item__title">
-              Полное руководство по Python 3: от новичка до специалиста
-            </h3>
-
-            <div class="courses-item__category">
-              Программирование
-            </div>
-
-            <div class="courses-item__author">
-              <span class="icon"><i class="fas fa-user"></i></span><span class="name">Иванов Иван</span>
-            </div>
-          </div>
-          <div class="courses-item__overlay">
-            <h1>Открыть</h1>
-          </div>
-        </div>
-
-        <div class="courses-item">
-          <div class="courses-item__img">
-            <img src="img/course.jpg" alt="картинка курса">
-          </div>
-          <div class="courses-item__info">
-            <h3 class="courses-item__title">
-              Полное руководство по Python 3: от новичка до специалиста
-            </h3>
-
-            <div class="courses-item__category">
-              Программирование
-            </div>
-
-            <div class="courses-item__author">
-              <span class="icon"><i class="fas fa-user"></i></span><span class="name">Иванов Иван</span>
-            </div>
-          </div>
-          <div class="courses-item__overlay">
-            <h1>Открыть</h1>
-          </div>
-        </div>
-
-        <div class="courses-item">
-          <div class="courses-item__img">
-            <img src="img/course.jpg" alt="картинка курса">
-          </div>
-          <div class="courses-item__info">
-            <h3 class="courses-item__title">
-              Полное руководство по Python 3: от новичка до специалиста
-            </h3>
-
-            <div class="courses-item__category">
-              Программирование
-            </div>
-
-            <div class="courses-item__author">
-              <span class="icon"><i class="fas fa-user"></i></span><span class="name">Иванов Иван</span>
-            </div>
-          </div>
-          <div class="courses-item__overlay">
-            <h1>Открыть</h1>
-          </div>
-        </div>
-
-        <div class="courses-item">
-          <div class="courses-item__img">
-            <img src="img/course.jpg" alt="картинка курса">
-          </div>
-          <div class="courses-item__info">
-            <h3 class="courses-item__title">
-              Полное руководство по Python 3: от новичка до специалиста
-            </h3>
-
-            <div class="courses-item__category">
-              Программирование
-            </div>
-
-            <div class="courses-item__author">
-              <span class="icon"><i class="fas fa-user"></i></span><span class="name">Иванов Иван</span>
-            </div>
-          </div>
-          <div class="courses-item__overlay">
-            <h1>Открыть</h1>
-          </div>
-        </div>
-
-      </div>
-
-      <a href="#" class="btn btn-more">Показать еще</a>
-    </div>
-  </section>
-
-  <section class="title-outer">
-    <h1 class="title">Новости и статьи</h1>
-    <div class="line"></div>
-  </section>
-
-  <section class="news">
-    <div class="main-wrap">
-      <div class="news-list">
-
-        <div class="news-item">
-          <div class="news-item__img">
-            <img src="img/course.jpg" alt="картинка курса">
-          </div>
-          <div class="news-item__info">
-            <h3 class="news-item__title">
-              Полное руководство по Python 3: от новичка до специалиста
-              Полное руководство по Python 3: от новичка до специалиста
-              Полное руководство по Python 3: от новичка до специалиста
-            </h3>
-
-            <div class="news-item__time">
-              <span class="icon"><i class="fas fa-clock"></i></span><span class="time">17.03.2020</span>
-            </div>
-          </div>
-          <div class="news-item__ellipse"></div>
-          <div class="news-item__overlay">
-            <h1>Открыть</h1>
-          </div>
-        </div>
-        <div class="news-item">
-          <div class="news-item__img">
-            <img src="img/course.jpg" alt="картинка курса">
-          </div>
-          <div class="news-item__info">
-            <h3 class="news-item__title">
-              Полное руководство по Python 3: от новичка до специалиста
-              Полное руководство по Python 3: от новичка до специалиста
-              Полное руководство по Python 3: от новичка до специалиста
-            </h3>
-
-            <div class="news-item__time">
-              <span class="icon"><i class="fas fa-clock"></i></span><span class="time">17.03.2020</span>
-            </div>
-          </div>
-          <div class="news-item__ellipse"></div>
-          <div class="news-item__overlay">
-            <h1>Открыть</h1>
-          </div>
-        </div>
-      </div>
-      <a href="#" class="btn btn-more">Показать еще</a>
-    </div>
-  </section>
+ <div class="main-wrap">
+    <section class="paginate center">
+      paginate
+    </section>
+ </div>
 
   <footer class="footer">
     <div class="main-wrap">
