@@ -14,10 +14,11 @@ console.log(isDev);
 
 module.exports = {
   entry: {
-    main: ["@babel/polyfill", "./src/index.js"],
+    index: ["@babel/polyfill", "./src/index.js"],
+    // itemPage: ["@babel/polyfill", "./src/index.js"],
   },
   output: {
-    filename: 'main.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
     publicPath: ''
   },
@@ -85,9 +86,20 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'src/index.html'
+      template: 'src/index.html',
+      filename: 'index.html',
     }),
-    new MiniCssExtractPlugin(),
+    new HtmlWebpackPlugin({
+      template: 'src/item-page.html',
+      filename: 'item-page.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/lesson-page.html',
+      filename: 'lesson-page.html',
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'main.css',
+    }),
     new CleanWebpackPlugin(),
     new CopyPlugin([
       { from: 'src/img', to: 'img' },

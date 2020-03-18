@@ -1,46 +1,141 @@
+.header {
+  padding-top: 20px;
+}
+
+.header-wrap {
+  @include media-max($S) {
+    padding-top: 20px;
+    background-color: $col-border;
+    width: 100%;
+    padding-bottom: 30px;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    box-shadow:0 8px 20px -7px $col-shadow;
+
+    a{
+      &:hover{
+        color: $col-main;
+      }
+    }
+  }
+  &.active {
+    opacity: 1;
+    top: 0;
+    visibility: visible;
+  }
+
+  
+
+  .btn-close{
+    display: none;
+    font-size: 20px;
+    margin-left: 96%;
+    @include media-max($S) {
+      display: inline-block;
+    }
+
+    &:hover {
+      color: $col-border;
+    }
+  }
+}
+
 .header-top {
-  margin-top: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 20px;
   border-bottom: 2px solid $col-active;
-  .title {}
-
-  
+  @include media-max($S) {
+    font-size: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 0;
+  }
   .right-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    .tel, #language{
+    @include media-max($S) {
+      // flex-direction: column;
+      // align-items: flex-start;
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .auth{
+      @include media-max($XS) {
+        margin-top: 10px;
+      }
+    }
+    .tel,
+    #language {
       margin-right: 16px;
     }
     #language{
-      border: none;
-      font-size: 14px;
+      @include media-max($S) {
+        background-color: $col-border;
+      }
     }
   }
 
   
+
+
 }
 
 .header-middle {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 20px;
+
+  @include media-max($S) {
+    font-size: 14px;
+    
+    align-items: flex-start;
+    margin-top: 0px;
+  }
+  @include media-max($XS) {
+    flex-direction: column;
+  }
+
+  .form{
+    margin-top: 10px;
+  }
+
+  .form-field{
+    padding-left: 40px;
+
+    @include media-max($S) {
+      padding-left: 0;
+    }
+  }
   .nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 
+    @include media-max($S) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
     &__item {
       margin-right: 16px;
       width: max-content;
       transition: all 0.3s;
       position: relative;
-      &::after{
+
+      &::after {
         transition: all 0.3s;
         content: '';
         width: 100%;
@@ -53,35 +148,61 @@
         visibility: hidden;
       }
 
-      &:hover::after{
+      &:hover::after {
         bottom: -4px;
         opacity: 1;
         visibility: visible;
       }
+
+      &:hover>.drop {
+        opacity: 1;
+        visibility: visible;
+      }
     }
-  }
-  .form{
-    .btn-search{
-      border-top-right-radius: 4px;
-      border-bottom-right-radius: 4px;
-      margin-left: -4px;
+
+    .drop {
+      transition: all 0.25s;
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      left: -20px;
+      top: 100%;
+      background-color: #fff;
+      padding: 10px 20px;
+      z-index: 1;
+      &__item {
+        margin-bottom: 10px;
+
+        &:first-child {
+          margin-top: 10px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
     }
   }
 
-  .form-field {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding-left: 40px;
-    input.search {
-      width: 100%;
-      border-right: none;
-    }
-  }
 }
 
-.header-bottom{
-  margin-top: 10px;
-  height: 480px;
-  background-color: rgb(161, 109, 109);
+.header-mobile {
+  justify-content: space-between;
+  align-items: center;
+  display: none;
+  color: $col-main;
+
+  .btn-gamburger {
+    background-color: #fff;
+    font-size: 20px;
+
+    &:hover {
+      color: $col-active;
+    }
+  }
+
+  @include media-max($S) {
+    display: flex;
+  }
 }

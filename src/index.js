@@ -1,6 +1,36 @@
 // import Post from "./js/Post"
-// import $ from "jquery"
 
+
+
+import "slick-carousel"
+
+import "./js/gamburger"
+import "./js/slick"
+import $ from "jquery"
+
+
+$(document).ready(function () {
+
+  $(".btn-gamburger").on("click", function () {
+    $(".header-wrap").toggleClass("active");
+  });
+  $(".btn-close").on("click", function () {
+    $(".header-wrap").removeClass("active");
+  });
+
+
+  $('.item-page .item-sections-item').on("click", function () {
+    $(this).toggleClass("active")
+      .children(".item-sections-item__cometencies")
+      .slideToggle();
+  });
+});
+
+
+
+// $(document).ready(function () {
+
+// });
 // //JSON
 // import posts from "./js/json/posts.json"
 

@@ -1,0 +1,16 @@
+.lesson-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: $col-lesson-main;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  &__user{
+    display: flex;
+    align-items: center;
+  }
+  &__name{
+    margin-right: 10px;
+  }
+}

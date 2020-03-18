@@ -1,9 +1,30 @@
 @import "reset";
 @import "settings";
 @import "mixins";
-
 @import "base";
 
+// slick slider
+@import "~slick-carousel/slick/slick"; 
+@import "slick-fix";
+// @import "~slick-carousel/slick/slick-theme.scss"; 
+
+//index
+@import "./parts/form-search";
 @import "parts/header";
 @import "parts/title-outer";
+@import "parts/recommend";
+@import "parts/courses";
+@import "parts/news";
 @import "parts/footer";
+
+// PAGE ITEM
+@import "./pages/item-page/base";
+
+@import "./pages/item-page/item-header";
+@import "./pages/item-page/item-content";
+@import "./pages/item-page/sidebar";
+
+// LESSON ITEM
+@import "./pages/lesson-page/base";
+
+@import "./pages/lesson-page/lesson-header";

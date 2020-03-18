@@ -1,0 +1,34 @@
+@mixin scroolbar {
+  &::-webkit-scrollbar {
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 40px;
+    margin-right: 10px;
+  }
+  
+  &::-webkit-scrollbar-track {
+    display: block;
+    background-color: $col-border;
+    border-radius: 40px;
+    margin-right: 10px;
+    height: 16px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    display: block;
+    background-color: $col-grays;
+    border-radius: 40px;
+    margin-right: 10px;
+    height: 16px;
+  }
+  
+  &::-webkit-scrollbar-button {
+    display: none;
+  }
+  
+  &::-webkit-scrollbar-corner {
+    display: none;
+  }
+}
+
