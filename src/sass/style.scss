@@ -9,7 +9,7 @@
 // @import "~slick-carousel/slick/slick-theme.scss"; 
 
 //index
-@import "./parts/form-search";
+@import "./parts/forms";
 @import "parts/header";
 @import "parts/title-outer";
 @import "parts/recommend";
@@ -40,3 +40,6 @@
 // Profile page
 
 @import "./pages/profile-page/profile";
+
+// Edit course from
+@import "./pages/edit-course-form/new-course";

@@ -165,24 +165,7 @@ button{
     color: $col-active;
   }
 }
-input, textarea{
-  border: 2px solid $col-border;
-  border-radius: 4px;
-  padding: 9px 20px 6px;
-  font-size: 14px;
 
-  @include media-max($S){
-    // width: 100%;
-    padding: 5px 14px 3px;
-    font-size: 12px;
-  }
-}
-
-form{
-  width: 100%;
-}
-
-select{cursor: pointer; color: $col-main;}
 
 .shadow{
   box-shadow:0 8px 20px -7px $col-shadow;

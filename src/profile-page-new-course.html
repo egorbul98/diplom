@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+
+  <title>Новый курс</title>
+
+</head>
+
+<body class="edit-course">
+  <header class="header">
+
+    <div class="main-wrap">
+      <div class="header-mobile">
+
+        <div class="title">
+          <h2><a href="index.html">Онлайн курсы</a></h2>
+        </div>
+        <button class="btn-gamburger" type="button"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+
+    <div class="header-wrap">
+      <div class="main-wrap">
+        <div class="btn-close"><i class="fas fa-times"></i></div>
+        <div class="header-top">
+          <div class="left-block">
+            <div class="title">
+              <h2><a href="index.html">Онлайн курсы</a></h2>
+            </div>
+          </div>
+          <div class="right-block">
+            <a class="tel" href="#">8 800 555 35 35</a>
+            <select name="language" id="language">
+              <option value="rus" selected>Русский</option>
+              <option value="en">Английский</option>
+            </select>
+            <div class="auth">
+              <button class="btn">Войти</button>
+              <button class="btn">Регистрация</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="header-middle">
+          <nav class="nav">
+            <div class="nav__item"><a href="#">Каталог</a>
+              <div class="nav__item-drop drop">
+                <div class="drop__item"><a href="item-page.html">Программирование</a></div>
+                <div class="drop__item"><a href="#">Web-разработка</a></div>
+                <div class="drop__item"><a href="#">Дизайн</a></div>
+                <div class="drop__item"><a href="#">Фото</a></div>
+              </div>
+            </div>
+            <div class="nav__item"><a href="#">Новости</a></div>
+            <div class="nav__item"><a href="#">О нас</a></div>
+          </nav>
+          <form class="form" action="" method="GET">
+            <div class="form-field">
+              <input type="text" class="search" placeholder="Поиск по каталогу">
+              <button class="btn btn-search" type="submit">Искать</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="new-course">
+    <div class="main-wrap">
+      <h1 class="new-course__header">Создание нового курса</h1>
+
+      <form class="form">
+
+
+
+        <div class="form-row">
+          <div class="form-row__left">
+            <p><label class="" for="title">Название<span class="required-input">*</span></label></p>
+          </div>
+          <div class="form-row__right form-field">
+            <input class="input-control" maxlength="64" id="title" type="text">
+            <div class="form-field__tooltip">
+              <span class="text">Не более 64 символов</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="form-row">
+          <div class="form-row__left">
+            <p><label class="" for="desc-short">Краткое описание<span class="required-input">*</span></label></p>
+          </div>
+          <div class="form-row__right form-field">
+            <textarea name="" id="desc-short" rows="10"></textarea>
+            <div class="form-field__tooltip">
+              <span class="text">Не более 200 символов</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-row__left">
+            <p><label class="" for="desc-short">О курсе<span class="required-input">*</span></label></p>
+          </div>
+          <div class="form-row__right form-field">
+            <textarea name="" id="desc-short" rows="10"></textarea>
+
+          </div>
+        </div>
+
+        
+        <div class="form-row">
+          <div class="form-row__left">
+            <p><label class="" for="edit-foto">Изображение</label></p>
+          </div>
+          <div class="form-row__right form-field">
+            <div class="new-course__img">
+              <img src="img/course.jpg" alt=""><span class="icon"><i class="fas fa-user"></i></span>
+              <input type="file" id="edit-foto" style="visibility: hidden;">
+              <label for="edit-foto" class="edit-foto"><i class="fas fa-edit"></i></label>
+            </div>
+
+          </div>
+          
+        </div>
+
+        <div class="form-btns-wrap">
+          <button class="btn" type="submit">Создать</button>
+          <a href="#" class="btn">Отмена</a>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="main-wrap">
+      <div class="footer-top">
+        <div class="footer-item">
+          <ul class="footer-list-link">
+            <div class="footer__link"><a href="#">Главная</a></div>
+            <div class="footer__link"><a href="#">Новости</a></div>
+            <div class="footer__link"><a href="#">О нас</a></div>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <ul class="footer-list-link">
+            <div class="footer__link"><a href="#">Новые курсы</a></div>
+            <div class="footer__link"><a href="#">Популярные курсы</a></div>
+            <div class="footer__link"><a href="#">Новости и статьи</a></div>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <div class="title">Мы в социальных сетях</div>
+          <ul class="social-list">
+            <div class="social-list__item"><a href="#"><i class="fab fa-twitter-square"></i></a></div>
+            <div class="social-list__item"><a href="#"><i class="fab fa-facebook-square"></i></a></div>
+            <div class="social-list__item"><a href="#"><i class="fab fa-google-plus-square"></i></a></div>
+          </ul>
+        </div>
+        <div class="footer-item">
+          <form class="form" action="" method="GET">
+            <div class="form-field">
+              <input type="text" class="search" placeholder="Поиск по каталогу">
+              <button class="btn btn-search" type="submit">Искать</button>
+            </div>
+          </form>
+
+          <select name="language" id="language">
+            <option value="rus" selected>Русский</option>
+            <option value="en">Английский</option>
+          </select>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <h1 class="title">Курсы онлайн</h1>
+        <div class="footer-item__years">© 2013 — 2020. Онлайн курсы</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/8dc48f921c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
