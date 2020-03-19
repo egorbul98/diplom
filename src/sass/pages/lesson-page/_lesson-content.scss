@@ -270,7 +270,8 @@
     .competences-list {
       margin-top: 10px;
       @include scroolbar;
-      height: 250px;
+      height: max-content;
+      max-height: 250px;
       overflow-y: auto;
       padding-right: 10px;
       margin-bottom: 10px;

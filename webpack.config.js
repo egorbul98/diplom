@@ -62,8 +62,7 @@ module.exports = {
       },
       {
         test: /\.(gif|png|jpe?g|svg)$/i,
-        use: [
-          {
+        use: [{
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
@@ -117,13 +116,27 @@ module.exports = {
       template: 'src/lesson-page-module-test.html',
       filename: 'lesson-page-module-test.html',
     }),
+
+    //---------Кабинет----------
+    new HtmlWebpackPlugin({
+      template: 'src/profile-page.html',
+      filename: 'profile-page.html',
+    }),
+
+    //------------------
+
     new MiniCssExtractPlugin({
       filename: 'main.css',
     }),
     new CleanWebpackPlugin(),
-    new CopyPlugin([
-      { from: 'src/img', to: 'img' },
-      { from: 'src/fonts', to: 'fonts' },
+    new CopyPlugin([{
+        from: 'src/img',
+        to: 'img'
+      },
+      {
+        from: 'src/fonts',
+        to: 'fonts'
+      },
     ]),
   ],
   devtool: isDev ? "source-map" : "",
