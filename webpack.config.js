@@ -134,6 +134,10 @@ module.exports = {
       template: 'src/profile-page-edit-course-content.html',
       filename: 'profile-page-edit-course-content.html',
     }),
+    new HtmlWebpackPlugin({
+      template: 'src/edit-module.html',
+      filename: 'edit-module.html',
+    }),
 
     //------------------
 

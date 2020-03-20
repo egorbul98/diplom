@@ -1,16 +1,31 @@
-// import Post from "./js/Post"
-
-
 
 import "slick-carousel"
+import "./libs/editor/summernote-lite"
 
 import "./js/gamburger"
 import "./js/slick"
+import "./js/select"
+import "./js/modal"
 import $ from "jquery"
 
 
 $(document).ready(function () {
+  //editor
+  $('#summernote').summernote({
+    toolbar: [
+      ['style', ['style']],
+      ['font', ['bold', 'underline', 'clear']],
+      ['fontname', ['fontname']],
+      ['color', ['color']],
+      ['para', ['ul', 'ol', 'paragraph']],
+      ['table', ['table']],
+      ['insert', ['link', 'picture']],
+      ['view', ['fullscreen', 'codeview', 'help']],
+    ]
+});
 
+
+  //
   $(".btn-gamburger").on("click", function () {
     $(".header-wrap").toggleClass("active");
   });
