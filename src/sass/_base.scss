@@ -121,20 +121,15 @@ button{
     background-color: $col-active;
     color: #ffffff;
   }
-
-  
   @include media-max($M){
     // width: 100%;
     padding: 6px 14px;
     font-size: 12px;
   }
-  // @include media-max($S){
-  //   // width: 100%;
-  //   padding: 6px 14px;
-  //   font-size: 16px;
-  // }
 }
-
+.btn-gray{
+  background-color: $col-grays;
+}
 .btn-more{
   margin: auto;
   width: max-content;
@@ -283,4 +278,20 @@ button{
       object-fit: cover;
     }
   }
+}
+
+.flex-b{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.flex-c{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.margin-bottom-50{
+  margin-bottom: 50px;
 }

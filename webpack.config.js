@@ -126,6 +126,14 @@ module.exports = {
       template: 'src/profile-page-new-course.html',
       filename: 'profile-page-new-course.html',
     }),
+    new HtmlWebpackPlugin({
+      template: 'src/profile-page-course-content.html',
+      filename: 'profile-page-course-content.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/profile-page-edit-course-content.html',
+      filename: 'profile-page-edit-course-content.html',
+    }),
 
     //------------------
 
